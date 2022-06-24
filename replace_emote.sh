@@ -10,7 +10,7 @@
 # Toca das Corujas
 # Códigos Binários, Funções de Onda e Teoria do Orbital Molecular Inc.
 # Unidade Barão Geraldo CX
-#2022_06_24_20_35_00
+#2022_06_24_20_36_00
 
 #############################################
 #Script para substituir emotecodes por emotes
