@@ -145,3 +145,10 @@ reduzido=$(echo "$aberto" | cut -d'/' -f 6)
 #curl -L -o "$2" "https://drive.google.com/uc?export=download&id=""$reduzido"
 wget --no-check-certificate "https://docs.google.com/uc?export=download&id=""$reduzido" -O "$2"
 }
+
+
+
+
+#zgrep 'install ' /var/log/dpkg.log* | sort | cut -f1,2,4 -d' ' >> datas.txt
+
+
