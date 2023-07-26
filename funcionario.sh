@@ -146,7 +146,11 @@ reduzido=$(echo "$aberto" | cut -d'/' -f 6)
 wget --no-check-certificate "https://docs.google.com/uc?export=download&id=""$reduzido" -O "$2"
 }
 
-
+ext_minusculas(){
+find . -name '*.*' -exec sh -c '
+  a=$(echo "$0" | sed -r "s/([^.]*)\$/\L\1/");
+  [ "$a" != "$0" ] && mv "$0" "$a" ' {} \;
+  }
 
 
 #zgrep 'install ' /var/log/dpkg.log* | sort | cut -f1,2,4 -d' ' >> datas.txt
